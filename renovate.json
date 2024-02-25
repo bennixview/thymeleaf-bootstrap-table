@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "ignoreDeps": [
+    "maven"
+  ],
+  "packageRules": [
+    {
+      "packageNames": ["*"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
+  "dependencyDashboardApproval": true,
+  "platform": "github",
+  "repositories": [
+    ".*"
+  ],
+  "labels": ["renovate"],
+  "timezone": "UTC",
+  "schedule": ["before 5am on the first day of the month"]
+}
