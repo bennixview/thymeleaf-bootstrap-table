@@ -1,10 +1,10 @@
-package com.bewi.thymeleafbootstraptable;
+package com.bewi.stockmanager;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ThymeleafBootstrapTableApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

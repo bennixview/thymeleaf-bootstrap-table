@@ -1,4 +1,4 @@
-package com.bewi.thymeleafbootstraptable.model.paging;
+package com.bewi.stockmanager.model.paging;
 
 import java.util.ArrayList;
 import java.util.List;

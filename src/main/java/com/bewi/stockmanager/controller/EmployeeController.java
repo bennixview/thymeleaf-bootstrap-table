@@ -1,4 +1,4 @@
-package com.bewi.thymeleafbootstraptable.controller;
+package com.bewi.stockmanager.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.bewi.thymeleafbootstraptable.service.EmployeeService;
+import com.bewi.stockmanager.service.EmployeeService;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/employees/")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
@@ -25,6 +25,6 @@ public class EmployeeController {
             @RequestParam(value = "size", required = false, defaultValue = "10") int size, Model model) {
         model.addAttribute("employees", employeeService.getEmployees(pageNumber, size));
 
-        return "index";
+        return "list";
     }
 }

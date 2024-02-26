@@ -1,4 +1,4 @@
-package com.bewi.thymeleafbootstraptable.model.paging;
+package com.bewi.stockmanager.model.paging;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.bewi.thymeleafbootstraptable.service;
+package com.bewi.stockmanager.service;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.bewi.thymeleafbootstraptable.model.Employee;
-import com.bewi.thymeleafbootstraptable.model.paging.Page;
-import com.bewi.thymeleafbootstraptable.model.paging.Paged;
-import com.bewi.thymeleafbootstraptable.model.paging.Paging;
+import com.bewi.stockmanager.model.Employee;
+import com.bewi.stockmanager.model.paging.Page;
+import com.bewi.stockmanager.model.paging.Paged;
+import com.bewi.stockmanager.model.paging.Paging;
 
 @Service
 public class EmployeeService {
@@ -21,7 +21,7 @@ public class EmployeeService {
 
         try {
             List<Employee> employees = objectMapper.readValue(getClass().getClassLoader()
-                    .getResourceAsStream("employees.json"),
+                            .getResourceAsStream("employees.json"),
                     new TypeReference<List<Employee>>() {
                     });
 

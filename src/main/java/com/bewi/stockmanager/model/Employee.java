@@ -1,4 +1,4 @@
-package com.bewi.thymeleafbootstraptable.model;
+package com.bewi.stockmanager.model;
 
 import java.util.Date;
 
